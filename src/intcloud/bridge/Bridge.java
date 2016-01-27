@@ -33,7 +33,7 @@ public class Bridge extends Activity {
         //Inject WebAppInterface methods into Web page by having Interface 'bridge' 
         webView.addJavascriptInterface(new bridge_protocol(this), "bridge");
         webView.setWebChromeClient(new WebChromeClient());
-        webView.loadUrl("file:///android_asset/index.html");
+        webView.loadUrl("file:///android_asset/www/index.html");
                 
 
     }

@@ -10,13 +10,17 @@
  //alert("hello" + ' ' + txt); 
  document.getElementById("exchange").innerHTML = txt;
  }
-    
+ 
+ function showAndroidToast(toastmsg) {
+        bridge.showToast(toastmsg);
+    }
+       
 </script>
 </head>
 <body>
  <h1 id="exchange">Simple Bridge</h1>
        
-         <button onclick="showAndroidToast()"> show Android Toast </button>
+         <button onclick="showAndroidToast('this is a message')"> show Android Toast </button>
  
 </body>
 </html>
