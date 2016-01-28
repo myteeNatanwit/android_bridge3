@@ -57,10 +57,10 @@ public void js_call(WebView webView, String jsString) {
 	
 	// class to comm with JS	
 public class bridge_protocol {
-        Context mContext;
+        Context aContext;
 
         bridge_protocol(Context c) {
-            mContext = c;
+            aContext = c;
         }
 
         //  Show Toast Message
@@ -68,7 +68,7 @@ public class bridge_protocol {
          
         @JavascriptInterface
         public void showToast(String toast) {
-            Toast.makeText(mContext, toast, Toast.LENGTH_SHORT).show();
+            Toast.makeText(aContext, toast, Toast.LENGTH_SHORT).show();
   
         }
  
