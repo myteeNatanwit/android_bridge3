@@ -39,8 +39,8 @@ public class Bridge extends Activity {
     }
     
  public void button1_onclick(View view) {
-	 js_call(webView, "Javascript_function('this is from the Java end')");
-
+	 js_call(webView, "Javascript_function('text','this is from the Java end')");
+ 
 	
     }
 
